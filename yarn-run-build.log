@@ -1,0 +1,20 @@
+yarn run v1.22.5
+$ react-scripts build
+Creating an optimized production build...
+Failed to compile.
+
+/home/jacekk/development/js/typescript/beautiful-react-hooks-typescript-issue/src/App.tsx
+TypeScript error in /home/jacekk/development/js/typescript/beautiful-react-hooks-typescript-issue/src/App.tsx(9,17):
+Argument of type '() => void' is not assignable to parameter of type 'any[]'.
+  Type '() => void' is missing the following properties from type 'any[]': pop, push, concat, join, and 27 more.  TS2345
+
+     7 | 	const onWindowResize = useGlobalEvent('resize');
+     8 | 
+  >  9 | 	onWindowResize(() => {
+       | 	               ^
+    10 | 		setWindowWidth(window.innerWidth);
+    11 | 	});
+    12 |
+
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
